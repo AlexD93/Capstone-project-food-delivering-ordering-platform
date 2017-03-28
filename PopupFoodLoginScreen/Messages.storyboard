@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Send Message Collection Controller-->
+        <scene sceneID="UKW-vu-LlZ">
+            <objects>
+                <collectionViewController storyboardIdentifier="sendChefMessage" id="OBo-2P-mnY" customClass="sendMessageCollectionController" customModule="PopupFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="D1z-4a-ZbH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0jx-vX-r5X">
+                            <size key="itemSize" width="375" height="170"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="laQ-nh-gPD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder=" Write Message..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xM-Yc-yFc">
+                                    <rect key="frame" x="8" y="622" width="288" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-bk-StG">
+                                    <rect key="frame" x="304" y="623" width="63" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Send"/>
+                                    <connections>
+                                        <action selector="sendButton:" destination="OBo-2P-mnY" eventType="touchUpInside" id="y0o-Ro-rUu"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57A-3w-zwg">
+                                    <rect key="frame" x="0.0" y="619" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.62059803300000005" green="0.62059803300000005" blue="0.62059803300000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="7ZQ-81-j6K" customClass="chatMessageCell" customModule="PopupFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-ZC-ewq">
+                                            <rect key="frame" x="8" y="106" width="359" height="22"/>
+                                            <string key="text">We nearly had some drama at the end and could have gone into extra time, but United hold on and progress to the quarter-finals of the Europa League.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-zN-o1N">
+                                            <rect key="frame" x="0.0" y="82" width="375" height="1"/>
+                                            <color key="backgroundColor" red="0.62059803300000005" green="0.62059803300000005" blue="0.62059803300000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mdg-XS-BB5">
+                                            <rect key="frame" x="8" y="17" width="72" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="72" id="WMM-uC-Dtp"/>
+                                                <constraint firstAttribute="height" constant="54" id="thU-yH-Lo6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cG-pM-hhL">
+                                            <rect key="frame" x="111" y="33" width="256" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="trailing" secondItem="7ZQ-81-j6K" secondAttribute="trailingMargin" id="4Q1-Ff-XOL"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="leading" secondItem="7ZQ-81-j6K" secondAttribute="leadingMargin" id="BCu-Kf-axl"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="top" secondItem="7ZQ-81-j6K" secondAttribute="topMargin" constant="98" id="Bia-qx-Pg6"/>
+                                    <constraint firstItem="kRD-zN-o1N" firstAttribute="top" secondItem="Mdg-XS-BB5" secondAttribute="bottom" constant="11" id="FBh-NF-GAv"/>
+                                    <constraint firstItem="Mdg-XS-BB5" firstAttribute="top" secondItem="7ZQ-81-j6K" secondAttribute="topMargin" constant="9" id="LhG-bQ-UpK"/>
+                                    <constraint firstItem="kRD-zN-o1N" firstAttribute="centerX" secondItem="6Wa-ZC-ewq" secondAttribute="centerX" id="Lsl-bN-nbi"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="leading" secondItem="7ZQ-81-j6K" secondAttribute="leadingMargin" id="Tby-zp-Bme"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="top" secondItem="kRD-zN-o1N" secondAttribute="bottom" constant="23" id="ZTk-Up-9Ig"/>
+                                    <constraint firstItem="Mdg-XS-BB5" firstAttribute="leading" secondItem="6Wa-ZC-ewq" secondAttribute="leading" id="i5W-EV-8zR"/>
+                                    <constraint firstItem="kRD-zN-o1N" firstAttribute="leading" secondItem="7ZQ-81-j6K" secondAttribute="leading" id="j2a-XA-9BF"/>
+                                    <constraint firstItem="7cG-pM-hhL" firstAttribute="trailing" secondItem="6Wa-ZC-ewq" secondAttribute="trailing" id="j4C-QL-uGb"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="top" secondItem="7ZQ-81-j6K" secondAttribute="topMargin" constant="98" id="n3E-Lq-xh5"/>
+                                    <constraint firstItem="6Wa-ZC-ewq" firstAttribute="trailing" secondItem="7ZQ-81-j6K" secondAttribute="trailingMargin" id="nwQ-29-IzP"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="6Wa-ZC-ewq" secondAttribute="bottom" constant="34" id="quN-dU-e9q"/>
+                                    <constraint firstItem="7cG-pM-hhL" firstAttribute="centerY" secondItem="Mdg-XS-BB5" secondAttribute="centerY" id="sAN-wc-415"/>
+                                    <constraint firstItem="7cG-pM-hhL" firstAttribute="leading" secondItem="Mdg-XS-BB5" secondAttribute="trailing" constant="31" id="t4F-9V-U1L"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="foodImage" destination="Mdg-XS-BB5" id="8Zd-F3-OaL"/>
+                                    <outlet property="foodName" destination="7cG-pM-hhL" id="qCa-4Q-zKP"/>
+                                    <outlet property="messageLabel" destination="6Wa-ZC-ewq" id="yUw-Tg-wtv"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="OBo-2P-mnY" id="lf3-5P-mNX"/>
+                            <outlet property="delegate" destination="OBo-2P-mnY" id="zsd-ZH-sLM"/>
+                        </connections>
+                    </collectionView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="5xM-Yc-yFc" id="E2P-gb-kR5"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aG-yM-zik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="-327.88605697151428"/>
+        </scene>
+    </scenes>
+</document>
