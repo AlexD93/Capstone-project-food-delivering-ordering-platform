@@ -91,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="xButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWY-8Y-sPY">
-                                <rect key="frame" x="16" y="28" width="33" height="34"/>
+                                <rect key="frame" x="16" y="72" width="33" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="9AL-sD-Z9S"/>
                                     <constraint firstAttribute="width" constant="33" id="knA-pT-xWe"/>
@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="jRp-NN-FNW">
-                                <rect key="frame" x="95" y="116" width="189" height="154"/>
+                                <rect key="frame" x="95" y="160" width="189" height="110"/>
                                 <color key="backgroundColor" red="0.97156583019999998" green="0.97156583019999998" blue="0.97156583019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -449,7 +449,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-jw-V1b">
-                                <rect key="frame" x="242" y="497" width="61" height="28"/>
+                                <rect key="frame" x="242" y="497" width="61" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="B44-jm-6uj"/>
                                 </constraints>
@@ -736,7 +736,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavControl" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yGb-IK-ujs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HHP-fV-kLt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HHP-fV-kLt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -756,7 +756,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uWq-iK-2Mk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uWq-iK-2Mk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -774,7 +774,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xwe-Cm-iIw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3C5-Na-O5s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3C5-Na-O5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -792,7 +792,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ahB-6R-Ut8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4eE-P5-wXK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4eE-P5-wXK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -811,6 +811,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="iFv-dl-Nry"/>
-        <segue reference="cO2-YX-olD"/>
+        <segue reference="5cE-wg-eBo"/>
     </inferredMetricsTieBreakers>
 </document>

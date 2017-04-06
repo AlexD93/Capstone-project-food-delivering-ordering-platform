@@ -45,28 +45,6 @@ class SignInViewController: UIViewController {
         }
     }
     
-    //guard let uid = FIRAuth.auth()?.currentUser?.uid
-    
-    //      print(12345)
-    
-    //else {
-    //  print("dklhvdlvhbdj")
-    //self.returnHomePage()
-    //return
-    //}
-    
-    
-    //If user is signed in, display homepage
-    //FIRAuth.auth()?.addStateDidChangeListener{ auth, user in
-    
-    //    if user != nil {
-    //    self.returnHomePage()
-    //    }
-    //}
-    
-    
-    //}
-    
     //Implementation for Sign In Button
     
     @IBAction func signInBtn(_ sender: UIButton) {
